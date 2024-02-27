@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <style>
+        .body{
+            justify-content:center;
+            align-items: center;
+        }
+      .container {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+        column-gap:2px ;
+        row-gap: 2px;}
+      .chess,.chess1,.chess2,.chess3,.chess4,.chess5,.chess6,.chess7{
+        border: 1px solid black;
+        height: 50px;
+        width: 50px;
+      }
+      
+      .row1,
+      .row2,
+      .row3,
+      .row4,
+      .row5,
+      .row6,
+      .row7,
+      .row8 {
+        display: grid;
+        text-align: center;
+      }
+      .chess:nth-child(2n + 1) {
+        background-color: black;
+      }
+      .chess1:nth-child(2n){
+        background-color:black ;
+      }
+      .chess2:nth-child(2n + 1) {
+        background-color: black;
+      }
+      .chess3:nth-child(2n){
+        background-color:black ;
+      }
+      .chess4:nth-child(2n + 1) {
+        background-color: black;
+      }
+      .chess5:nth-child(2n){
+        background-color:black ;
+      }
+      .chess6:nth-child(2n + 1) {
+        background-color: black;
+      }
+      .chess7:nth-child(2n){
+        background-color:black ;
+      }
+      i:hover{
+        background-color: aqua;
+        scale:1.5;
+
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="body">
+    <div class="container">
+      <div class="row1">
+        <div class="chess"><i class="fa-solid fa-chess-rook"style='font-size:48px;color: white;'></i></div>
+        <div class="chess"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess"><i class="fa-solid fa-chess-rook"style='font-size:48px;'></i></div>
+      </div>
+
+      <div class="row2">
+        <div class="chess1"><i class='fas fa-chess-knight'style="font-size:48px;"></i></div>
+        <div class="chess1"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color: white;'></i></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"></div>
+        <div class="chess1"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess1"><i class='fas fa-chess-knight'style='font-size:48px;color:white'></i></div>
+      </div>
+
+      <div class="row3">
+        <div class="chess2"><i class='fas fa-chess-bishop' style='font-size:48px;color:white'></i></div>
+        <div class="chess2"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"></div>
+        <div class="chess2"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess2"><i class='fas fa-chess-bishop' style='font-size:48px;color:black'></i></div>
+      </div>
+
+      <div class="row4">
+        <div class="chess3"><i class='fas fa-chess-king' style='font-size:48px;color:'></i></div>
+        <div class="chess3"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"></div>
+        <div class="chess3"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess3"><i class='fas fa-chess-queen' style='font-size:48px;color:white'></i></div>
+      </div>
+
+      <div class="row5">
+        <div class="chess4"><i class='fas fa-chess-queen' style='font-size:48px;color:white'></i></div>
+        <div class="chess4"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"></div>
+        <div class="chess4"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess4"><i class='fas fa-chess-king' style='font-size:48px;color:'></i></div>
+      </div>
+
+      <div class="row6">
+        <div class="chess5"><i class='fas fa-chess-bishop' style='font-size:48px;color:black'></i></div>
+        <div class="chess5"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"></div>
+        <div class="chess5"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess5"><i class='fas fa-chess-bishop' style='font-size:48px;color:white'></i></div>
+      </div>
+
+      <div class="row7">
+        <div class="chess6"><i class='fas fa-chess-knight'style="font-size:48px;color:white"></i></div>
+        <div class="chess6"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"></div>
+        <div class="chess6"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess6"><i class='fas fa-chess-knight'style="font-size:48px;"></i></div>
+      </div>
+
+      <div class="row8">
+        <div class="chess7"><i class="fa-solid fa-chess-rook"style='font-size:48px;color:;'></i></div>
+        <div class="chess7"><i class="fa-solid fa-chess-pawn" style='font-size:48px;color:white'></i></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"></div>
+        <div class="chess7"><i class="fa-solid fa-chess-pawn" style='font-size:48px;'></i></div>
+        <div class="chess7"><i class="fa-solid fa-chess-rook"style='font-size:48px;color: white;'></i></div>
+      </div>
+  
+    </div>
+   </div> 
+  </body>
+</html>
